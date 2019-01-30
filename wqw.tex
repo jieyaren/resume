@@ -41,43 +41,46 @@
 \cventry{}{期望工作地点: 深圳北京 }{}{}{期望薪资:  税前15k+}{}
 %我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
 \section{工作与项目经历}
+\cventry{}{华为技术有限公司}{数据库服务产品部}{}{}{}
+\cventry{ 职责
+}{ RocksDB内核开发，根据需求适配到MongoDB, Cassandra, Redis 上
+}{}{}{}{}
+\vspace*{0.2\baselineskip}
+\cventry{2018至今}{Redis over RocksDB 开发，引入开源项目，适配并合入内部功能}{}{}{}{}
+\vspace*{0.2\baselineskip}
 \cventry{}{海能达科技股份有限公司}{系统软件设计开发部}{}{}{}
 \cventry{ 职责
 }{1. 负责业务功能开发，测试与部署，代码静态检查{\newline}
 2. 负责设计文档的编写{\newline}
 3. 部门技术接口，与其他部门合作技术负责人{\newline}
 4. 外场线上环境问题定位联系人，快速响应解决问题}{}{}{}{}
-\cventry{2018至今}{一体化基站/微站开发，负责将成熟软件移植到PowerPC上，我在该项目中负责字节序转换与业务验证的工作，由于涉及到的消息结构体较多，我通过脚本收集整合相关结构体，生成对应的转序函数，快速完成任务}{}{}{}{}
+\vspace*{0.2\baselineskip}
+\cventry{2018.05-2018.10}{核心网负载均衡项目，负责Redis组件调研以及适配，使用Redis中间件，将现有的网络架构拆分，以支持大规模查询}{}{}{}{}
+\vspace*{0.2\baselineskip}
+\cventry{2017.01-2018.05}{一体化基站/微站开发，负责将成熟软件移植到PowerPC上，我在该项目中负责字节序转换与业务验证的工作，由于涉及到的消息结构体较多，我通过脚本收集整合相关结构体，生成对应的转序函数，快速完成任务}{}{}{}{}
+\vspace*{0.2\baselineskip}
 \cventry{2016-2017}{从事PDT专网协议栈开发任务，我在该项目中负责核心网与基站后端应用开发，能高效的实现需求并自测验证，定位外场问题准确迅速}{}{}{}{}
+
+
+\section{技能}
+\cventry{编程}{C/C++ $>$ Python $>$ Shell $>$ Ruby $>$go }{熟悉C++11，熟悉STL, boost, libevent, googletest 等}{}{}{}
+\cventry{Linux}{熟练的Linux环境开发，熟悉GDB等调试工具}{}{}{}{}
+\cventry{网络编程}{熟悉TCP/IP，多线程编程模型}{}{}{}{}
+\cventry{数据库}{熟悉RocksDB,MongoDB,MySQL,Redis,了解原理实现}{}{}{}{}
+\cventry{英语}{CET4, 查阅英语文献，github,stackoverflow无压力}{}{}{}{}
 
 \section{个人项目}
 \renewcommand{\baselinestretch}{1.2}
 
 \cventry{YAC}
 {C++模板容器库}{}{}{}
-{是一个c++容器类的实现，参考了boost::container https://github.com/jieyaren/yac}
+{是一个c++ 标准库的实现}
 
 \vspace*{0.2\baselineskip}
 
-\cventry{Yet Another Algorithm}
-{C++模板算法库}{}{}{}
-{是一个C++算法库的一个简单实现，参考了boost::Algorithm和<algorithm> https://github.com/jieyaren/yaa}
-
 \vspace*{0.2\baselineskip}
-
-\cventry{toolkit}
-{C++多线程基本组件}{}{}{}
-{是一个POSIX api的简单封装，并实现了一些基本组件，如自旋锁等，参考了muduo https://github.com/jieyaren/toolkit}
 
 \renewcommand{\baselinestretch}{1.0}
-
-\section{技能}
-\cventry{编程}{C/C++ $>$ Python $>$ Shell}{熟悉C++11，熟悉STL, boost, libevent, googletest 等}{}{}{}
-\cventry{Linux}{熟练的Linux环境开发，熟悉GDB等调试工具}{}{}{}{}
-\cventry{网络编程}{熟悉TCP/IP，多线程编程模型}{}{}{}{}
-\cventry{数据库}{熟悉MySQL和Redis，了解原理实现}{}{}{}{}
-\cventry{英语}{CET4, 查阅英语文献，github,stackoverflow无压力}{}{}{}{}
-
 \closesection{}                   % needed to renewcommands
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
 \end{document}
