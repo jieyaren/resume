@@ -1,8 +1,9 @@
 # resume
 
 - [中文简历](./wqw.pdf)
-
 - Credit to  [wqtdkp]( https://github.com/wgtdkp/resume)
+
+### 使用模板
 
 - 需要安装字体Noto Sans CJK SC Regular，以及TexLive，安装后TexWorks打开，选择XeLatex排版生成PDF
 
@@ -24,3 +25,4 @@
 >   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 >
 >  0. You just DO WHAT THE FUCK YOU WANT TO.
+

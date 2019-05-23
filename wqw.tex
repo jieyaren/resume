@@ -4,6 +4,7 @@
 %\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
 \moderncvtheme[blue]{classic}                % idem
 \usepackage{xunicode, xltxtra}
+\usepackage[unicode,colorlinks, linkcolor=blue]{hyperref}
 \XeTeXlinebreaklocale "zh"
 \widowpenalty=10000
 
@@ -18,14 +19,17 @@
 \setsansfont[Mapping=tex-text]{Noto Sans CJK SC}
 \CJKtilde
 
+% link color
+\AtBeginDocument{ \hypersetup{colorlinks,urlcolor=purple} }
+
 % personal data
 \firstname{王全伟}
 \familyname{}
 \title{}               % optional, remove the line if not wanted
 
 \mobile{(+86)188-4418-9533}                    % optional, remove the line if not wanted
-\email{18844189533@qq.com}                         % optional, remove the line if not wanted
-\homepage{www.github.com/jieyaren}                         % optional, remove / comment the line if not wanted
+\email{wanghenshui@qq.com}                         % optional, remove the line if not wanted
+\homepage{wanghenshui.github.io/}                         % optional, remove / comment the line if not wanted
 %% \quote{\small{``Do what you fear, and the death of fear is certain.''\\-- Anthony Robbins}}
 
 
@@ -38,17 +42,17 @@
 \section{个人信息}
 \cventry{学历}{本科2012--2016}{吉林大学电子信息工程系}{}{}{}  
 \cventry{期望职位}{ C++后台工程师 }{}{}{面向分布式后台，分布式数据库，高并发后台开发的项目最好}{}
-\cventry{}{期望工作地点: 深圳北京 }{}{}{期望薪资:  税前15k+}{}
+\cventry{}{期望工作地点: 深圳北京 }{}{}{期望薪资:  税前20k+}{}
 %我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
 \section{工作与项目经历}
-\cventry{}{华为技术有限公司}{数据库服务产品部}{}{}{}
+\cventry{}{\large{华为技术有限公司}}{\large{数据库服务产品部}}{}{}{}
 \cventry{ 职责
 }{ RocksDB内核开发，根据需求适配到MongoDB, Cassandra, Redis 上
 }{}{}{}{}
 \vspace*{0.2\baselineskip}
 \cventry{2018至今}{Redis over RocksDB 开发，引入开源项目，适配并合入内部功能}{}{}{}{}
-\vspace*{0.2\baselineskip}
-\cventry{}{海能达科技股份有限公司}{系统软件设计开发部}{}{}{}
+\vspace*{0.5\baselineskip}
+\cventry{}{\large{海能达科技股份有限公司}}{\large{系统软件设计开发部}}{}{}{}
 \cventry{ 职责
 }{1. 负责业务功能开发，测试与部署，代码静态检查{\newline}
 2. 负责设计文档的编写{\newline}
@@ -63,23 +67,29 @@
 
 
 \section{技能}
-\cventry{编程}{C/C++ $>$ Python $>$ Shell $>$ Ruby $>$go }{熟悉C++11，熟悉STL, boost, libevent, googletest 等}{}{}{}
+\cventry{编程}{C/C++ $>$ Python$|$Shell$|$Ruby $>$ Go$|$Rust }{熟悉Modern C++,包括STL, smart ptr, boost, gsl, libevent, googletest 等}{}{}{}
 \cventry{Linux}{熟练的Linux环境开发，熟悉GDB等调试工具}{}{}{}{}
 \cventry{网络编程}{熟悉TCP/IP，多线程编程模型}{}{}{}{}
-\cventry{数据库}{熟悉RocksDB,MongoDB,MySQL,Redis,了解原理实现}{}{}{}{}
-\cventry{英语}{CET4, 查阅英语文献，github,stackoverflow无压力}{}{}{}{}
+\cventry{数据库}{熟悉RocksDB, Redis, MySql, 了解原理实现, 了解MongoDB}{}{}{}{}
+\cventry{英语}{CET4, 查阅英语文献，RFCs, github, stackoverflow无压力}{}{}{}{}
 
-\section{个人项目}
+\section{个人项目以及开源贡献}
 \renewcommand{\baselinestretch}{1.2}
 
-\cventry{YAC}
-{C++模板容器库}{}{}{}
-{是一个c++ 标准库的实现}
+\cventry{Pika}
+{这个几个PR解决了Pika在实现redis pubsub功能一些问题}{}{}{}
+{\href{https://github.com/Qihoo360/pika/pull/689}{\#689} \href{https://github.com/Qihoo360/pika/pull/738}{\#738}}
+\cventry{Fist}
+{这个PR覆盖了Fist模块一部分测试}{}{}{}
+{\href{https://github.com/f-prime/fist/pull/41}{\#41}}
+
 
 \vspace*{0.2\baselineskip}
 
 \vspace*{0.2\baselineskip}
-
+\vspace*{0.2\baselineskip}
+\vspace*{0.2\baselineskip}
+{\footnotesize Last updated: \today} 
 \renewcommand{\baselinestretch}{1.0}
 \closesection{}                   % needed to renewcommands
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
